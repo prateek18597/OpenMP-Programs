@@ -22,7 +22,7 @@ int main(){
 		}
 		#pragma omp critical
 		sum += psum;
-	}
+	}	
 	t2 = omp_get_wtime();
 
 	printf("Sum: %d and Time: %f\n", sum, t2-t1); 
